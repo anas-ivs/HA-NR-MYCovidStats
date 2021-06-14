@@ -56,7 +56,7 @@ In addition to sending back for HA for lovelace; also included in node red funct
 
 3. Lovelace - Import and customize to your liking.
 
-```text
+```yaml
 type: custom:vertical-stack-in-card
     style: |
       ha-card {
