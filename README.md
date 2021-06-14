@@ -113,4 +113,8 @@ type: custom:vertical-stack-in-card
               fill: false
 
 ```
-        
+
+## Thanks
+##### Credit to @wnarifin / @ A Jim Al
+
+##### [Home Assistant Malaysia](https://www.facebook.com/groups/homeassistantmalaysia)
