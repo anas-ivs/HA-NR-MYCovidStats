@@ -1,5 +1,7 @@
 # HA-NR-MYCovidStats
 
+ ![visitors](https://visitor-badge.glitch.me/badge?page_id=anas-ivs.ha-nr-mr-covidstats.visitor-badge)
+
 Home Assistant &amp; Node Red Implementation of Malaysia Covid Stats
 
 Original sharing in FB Home Assistant Malaysia group by [Jimmy93 (FB:A Jim)](https://github.com/jimmy93/Malaysia-Daily-Covid-19-Home-Assistant) which implements Malaysia COVID-19 Statistic for use in [Home Assistant(HA)](https://www.home-assistant.io/) with HA configuration.yaml triggering command line call of python script. 
