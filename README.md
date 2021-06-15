@@ -1,8 +1,9 @@
 # HA-NR-MYCovidStats
 
- ![visitors](https://visitor-badge.glitch.me/badge?page_id=anas-ivs.ha-nr-mr-covidstats.visitor-badge)
-
 Home Assistant &amp; Node Red Implementation of Malaysia Covid Stats
+![visitors](https://visitor-badge.glitch.me/badge?page_id=anas-ivs.ha-nr-mr-covidstats.visitor-badge)
+
+| [How it Works](#How) | [Pre-requisites](#Pre) | [Installation](#Install) | [Credits](#Credits) |
 
 Original sharing in FB Home Assistant Malaysia group by [Jimmy93 (FB:A Jim)](https://github.com/jimmy93/Malaysia-Daily-Covid-19-Home-Assistant) which implements Malaysia COVID-19 Statistic for use in [Home Assistant(HA)](https://www.home-assistant.io/) with HA configuration.yaml triggering command line call of python script. 
 
@@ -19,13 +20,13 @@ This reimplements similar functions but instead uses much more easier (to me) No
 In addition to sending back for HA for lovelace; also included in node red function for Telegram request and reporting. 
 
 
-## How It Works (Extension to Node-Red)
+## <a name="How">How It Works (Extension to Node-Red)</a>
 1.  Node-Red pulls CSV from [@wnarifin github](https://github.com/wnarifin/covid-19-malaysia) and returns payload as CSV array.
 2.  Array pop() on function node returns last row; which would correspond to latest data and what likely we want to see anyway.
 3.  Send to HA entities defined as Sensors. Defined 4 most useful information while the rest information is nested as attributes under the sensor. 
 4.  Telegram node `/getcovidstats`  for manual call request and sets flags to identify at output to only send Telegram update when requested. 
 
-## Pre-requisites 
+## <a name="Pre">Pre-requisites </a>
 1.  Home Assistant with Node-Red. Ada banyak tutorial/videos on this with difficulty level as easy. [This is one example](http://https://www.juanmtech.com/get-started-with-node-red-and-home-assistant/). Test that you have enabled and can load Node-red on side bar. Make sure to also install [Node-Red companion integration](https://github.com/zachowj/hass-node-red).
 2.  Telegram bot and chat ids. I followed this [tutorial](https://www.thesmarthomebook.com/2020/10/13/a-guide-to-using-telegram-with-node-red-and-home-assistant/) which is clear and easy to follow. 
 > **Tip:** Follow the steps to get botid/chatid only but you do not need to setup in Home Assistant Notify/Telegram platform. Use Node-Red fully for Telegram.
@@ -40,7 +41,7 @@ In addition to sending back for HA for lovelace; also included in node red funct
 - [Mini graph card](https://github.com/kalkih/mini-graph-card)
     
 
-## Installation
+## <a name="Install">Installation</a>
 1. Node-Red.
 - Import [Flow](https://github.com/anasothman-myy/HA-NR-MYCovidStats/blob/main/ha-nr-mycovidstats.json) into Node Red (Upper Right burger stack -> Import).
 - Ensure Telegrambots and Home Assistants node Servers are configured before clicking deploy.
@@ -116,7 +117,7 @@ type: custom:vertical-stack-in-card
 
 ```
 
-## Thanks
+## <a name="Credits">Credit</a>
 ##### Credit to @wnarifin / @ A Jim Al
 
 ##### [Home Assistant Malaysia](https://www.facebook.com/groups/homeassistantmalaysia)
