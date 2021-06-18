@@ -7,15 +7,15 @@ Home Assistant &amp; Node Red Implementation of Malaysia Covid Stats
 
 Original sharing in FB Home Assistant Malaysia group by [Jimmy93 (FB:A Jim)](https://github.com/jimmy93/Malaysia-Daily-Covid-19-Home-Assistant) which implements Malaysia COVID-19 Statistic for use in [Home Assistant(HA)](https://www.home-assistant.io/) with HA configuration.yaml triggering command line call of python script. 
 
-![Node-Red Flow of HA-NR-MYCovidStats](https://github.com/anasothman-myy/HA-NR-MYCovidStats/blob/main/Node-Red%20Flow%20-%20COVID19%20Stats.PNG)
+![Node-Red Flow of HA-NR-MYCovidStats](https://github.com/anasothman-myy/HA-NR-MYCovidStats/blob/main/images/Node-Red%20Flow%20-%20COVID19%20Stats.PNG)
 
 This reimplements similar functions but instead uses much more easier (to me) Node-Red to callout and retrieve statistic from [repo](https://github.com/wnarifin/covid-19-malaysia) which you should read out in length how the data scarping is done and automated. *sigh -  statistic availability*  
 
-![HA Lovelace](https://github.com/anasothman-myy/HA-NR-MYCovidStats/blob/main/lovelace-ha-nr-mycovidstats.PNG)
+![HA Lovelace](https://github.com/anasothman-myy/HA-NR-MYCovidStats/blob/main/images/lovelace-ha-nr-mycovidstats.PNG)
 
-![Entities Statistics](https://github.com/anasothman-myy/HA-NR-MYCovidStats/blob/main/Sensor%20and%20Attributes-ha-nr-mycovidstats.PNG)
+![Entities Statistics](https://github.com/anasothman-myy/HA-NR-MYCovidStats/blob/main/images/Sensor%20and%20Attributes-ha-nr-mycovidstats.PNG)
 
-![Telegram sample](https://github.com/anasothman-myy/HA-NR-MYCovidStats/blob/main/telegram-request-ha-nr-mycovidstats.PNG)
+![Telegram sample](https://github.com/anasothman-myy/HA-NR-MYCovidStats/blob/main/images/telegram-request-ha-nr-mycovidstats.PNG)
 
 In addition to sending back for HA for lovelace; also included in node red function for Telegram request and reporting. 
 
