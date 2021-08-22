@@ -5,7 +5,7 @@ Home Assistant &amp; Node Red Implementation of Malaysia Covid Stats
 
 | [How it Works](#How) | [Pre-requisites](#Pre) | [Installation](#Install) | [Credits](#Credits) |
 
-![](https://raw.githubusercontent.com/anas-ivs/HA-NR-MYCovidStats/main/images/images\banner.PNG)
+![](https://raw.githubusercontent.com/anas-ivs/HA-NR-MYCovidStats/main/images/banner.PNG)
 
 Original sharing in FB Home Assistant Malaysia group by [Jimmy93 (FB:A Jim)](https://github.com/jimmy93/Malaysia-Daily-Covid-19-Home-Assistant) which implements Malaysia COVID-19 Statistic for use in [Home Assistant(HA)](https://www.home-assistant.io/) with HA configuration.yaml triggering command line call of python script.
 
@@ -27,7 +27,7 @@ This reimplements similar functions but instead uses Node-Red.
 
 5. Rather than sending each data to HA as individual sensors - each dataset corresponding individual data is send to HA entities as attributes. 
 
-   ![](https://raw.githubusercontent.com/anas-ivs/HA-NR-MYCovidStats/main/images/Sensor and Attributes-ha-nr-mycovidstats.PNG)
+   ![](https://raw.githubusercontent.com/anas-ivs/HA-NR-MYCovidStats/main/images/Sensor%20and%20Attributes-ha-nr-mycovidstats.PNG)
 
 6. This however makes assessing the attributes data a little bit tricky where not all `lovelace` cards can directly display attributes - hence workaround required:
 
