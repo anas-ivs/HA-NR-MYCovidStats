@@ -5,13 +5,13 @@ Home Assistant &amp; Node Red Implementation of Malaysia Covid Stats
 
 | [How it Works](#How) | [Pre-requisites](#Pre) | [Installation](#Install) | [Credits](#Credits) |
 
-Original sharing in FB Home Assistant Malaysia group by [Jimmy93 (FB:A Jim)](https://github.com/jimmy93/Malaysia-Daily-Covid-19-Home-Assistant) which implements Malaysia COVID-19 Statistic for use in [Home Assistant(HA)](https://www.home-assistant.io/) with HA configuration.yaml triggering command line call of python script.
+![](https://raw.githubusercontent.com/anas-ivs/HA-NR-MYCovidStats/main/images/images\banner.PNG)
 
-![Node-Red Flow of HA-NR-MYCovidStats](https://github.com/anasothman-myy/HA-NR-MYCovidStats/blob/main/images/Node-Red%20Flow%20-%20COVID19%20Stats.PNG)
+Original sharing in FB Home Assistant Malaysia group by [Jimmy93 (FB:A Jim)](https://github.com/jimmy93/Malaysia-Daily-Covid-19-Home-Assistant) which implements Malaysia COVID-19 Statistic for use in [Home Assistant(HA)](https://www.home-assistant.io/) with HA configuration.yaml triggering command line call of python script.
 
 This reimplements similar functions but instead uses Node-Red.
 
-**Update Release 2: August 2021
+<u>**Update Release 2: August 2021**</u>
 
 [Wnaarifin repo](https://github.com/wnarifin/covid-19-malaysia) stopped daily updates since 3rd August 2021. I have re-work on the flows to retrieve the more comprehensive open data made available recently by [MOH](https://github.com/MoH-Malaysia/covid19-public) AND [CITF](https://github.com/CITF-Malaysia/citf-public).
 
@@ -27,7 +27,7 @@ This reimplements similar functions but instead uses Node-Red.
 
 5. Rather than sending each data to HA as individual sensors - each dataset corresponding individual data is send to HA entities as attributes. 
 
-   ![](C:\Users\user\Documents\GitHub\HA-NR-MYCovidStats\images\Sensor and Attributes-ha-nr-mycovidstats.PNG)
+   ![](https://raw.githubusercontent.com/anas-ivs/HA-NR-MYCovidStats/main/images/Sensor and Attributes-ha-nr-mycovidstats.PNG)
 
 6. This however makes assessing the attributes data a little bit tricky where not all `lovelace` cards can directly display attributes - hence workaround required:
 
@@ -82,7 +82,7 @@ For lovelace custom cards - install the following from HACS.
 
 - Multiple Entry Row Version
 
-![](C:\Users\user\Documents\GitHub\HA-NR-MYCovidStats\images\lovelace-ha-nr-mycovidstats-ver2-multiplentryrow.PNG)
+![](https://raw.githubusercontent.com/anas-ivs/HA-NR-MYCovidStats/main/images/lovelace-ha-nr-mycovidstats-ver2-multiplentryrow.PNG)
 
 ```yaml
 type: custom:vertical-stack-in-card
@@ -250,7 +250,8 @@ cards:
 
 
 - Mini graph version 
-- ![](C:\Users\user\Documents\GitHub\HA-NR-MYCovidStats\images\lovelace-ha-nr-mycovidstats-ver2-minigraph.PNG)
+
+  ![](https://raw.githubusercontent.com/anas-ivs/HA-NR-MYCovidStats/main/images/lovelace-ha-nr-mycovidstats-ver2-minigraph.PNG)
 
 ```yaml
 type: custom:vertical-stack-in-card
